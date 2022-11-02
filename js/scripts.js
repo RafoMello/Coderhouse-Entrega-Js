@@ -1,31 +1,31 @@
-let total_alunos = prompt("Total de Alunos")
-let i=0
-let nota
-let validacionclase
+let total_alunos = prompt("Total de Alunos");
+let i=0;
+var nota = new array();
+let validacionclase;
 
-for(i=0,i<=total_alunos,i++)
+for(i=0;i<=total_alunos;i++)
 {
-nota[i] = prompt("Insira nota del aluno " & i)
+nota.push(prompt("Insira nota del aluno " & i));
 }
 
-validacionclase = console.log(promedioclase(nota,total_alunos))
+validacionclase = promedioclase(nota,total_alunos);
 
-if(promedionota>=6)
+if(validacionclase>=6)
 {
-    console.log("Clase aprobada")
+    console.log("Clase aprobada");
 }else
 {
-    console.log("Clase Reprobada")
+    console.log("Clase Reprobada");
 }
 
 function promedioclase (nota, total_alunos)
 {
-    let promedionota
-    let n
+    let promedionota;
+    let n;
 
-    for(n=0,n<=total_alunos,n++)
+    for(n=0;n<=total_alunos;n++)
     {
-        promedionota = promedionota+nota[n]
+        promedionota = promedionota+nota[n];
     }
 
     promedionota=promedionota/total_alunos
